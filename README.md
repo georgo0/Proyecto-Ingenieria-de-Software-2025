@@ -12,6 +12,11 @@ npm install
 ```bash
 npm -v
 ```
+* Para colnar el repositorio
+ ```bash
+git clone https://github.com/georgo0/Proyecto-Ingenieria-de-Software-2025.git
+``` 
+* Para iniciar la aplicacion de React
 ```bash
 npm start
 ```
