@@ -1,13 +1,11 @@
-// src/components/Register.js
-
 import React from 'react';
-import './Register.css'; // Importamos estilos personalizados
+import '../Register.css'; 
 
-function Register() {
+function RegisterStudent() {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100 fondo-register">
       <div className="card p-4 sombra-register" style={{ width: '100%', maxWidth: '400px' }}>
-        <h2 className="text-center mb-4">Crear Cuenta</h2>
+        <h2 className="text-center mb-4">Registro de Estudiante</h2>
         <form>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Nombre Completo</label>
@@ -28,5 +26,4 @@ function Register() {
   );
 }
 
-export default Register;
-
+export default RegisterStudent;
