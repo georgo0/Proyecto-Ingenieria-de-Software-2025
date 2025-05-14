@@ -27,4 +27,4 @@ npm install react-bootstrap bootstrap
 ```
 
 2. Para seguir añadiendo o editar el proyecto, hay que dirigirse a la carpeta `src`, ahí estan todos los componentes para el proyecto.
-3. Para añadir algún componente extra, recuerden que hay que editar el archivo `App.js` y el `index.js`. 
+3. Para añadir algún componente extra, recuerden que hay que editar el archivo `App.js` y el `index.js`; este ultimo es el que renderiza los componentes html.
