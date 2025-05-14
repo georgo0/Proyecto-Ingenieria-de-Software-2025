@@ -2,7 +2,7 @@
 En este repositorio se subiran los avances del proyecto
 
 
-Instrucciones para iniciar proyecto
+1. Instrucciones para iniciar proyecto
 * Instalar `node js` en primer lugar
 * Instalar `nmp` desde la carpeta
 ```bash
@@ -25,3 +25,6 @@ npm start
 ```bash
 npm install react-bootstrap bootstrap
 ```
+
+2. Para seguir añadiendo o editar el proyecto, hay que dirigirse a la carpeta `src`, ahí estan todos los componentes para el proyecto.
+3. Para añadir algún componente extra, recuerden que hay que editar el archivo `App.js` y el `index.js`. 
