@@ -8,6 +8,9 @@ import Login from './components/Login';
 import RegisterStudent from './components/student/RegisterStudent';
 import RegisterTeacher from './components/teacher/RegisterTeacher';
 import Dashboard from './components/Dashboard';
+import MainStudent from './components/student/MainStudent';
+import IngresarCodigo from './components/student/IngresarCodigo';
+
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path="/register-student" element={<RegisterStudent />} />
           <Route path="/register-teacher" element={<RegisterTeacher />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/main-student" element={<MainStudent />} />
+          <Route path="/ingresar-codigo" element={<IngresarCodigo />} />
+
         </Routes>
       </Container>
     </>

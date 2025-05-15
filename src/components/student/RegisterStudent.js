@@ -1,12 +1,21 @@
 import React from 'react';
-import '../Register.css'; 
+import { useNavigate } from 'react-router-dom';
+import '../Register.css'; // Asegúrate de que la ruta sea correcta
 
 function RegisterStudent() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Aquí podrías agregar lógica de validación o guardar datos
+    navigate('/main-student'); // Redirección al main student
+  };
+
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100 fondo-register">
       <div className="card p-4 sombra-register" style={{ width: '100%', maxWidth: '400px' }}>
         <h2 className="text-center mb-4">Registro de Estudiante</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Nombre Completo</label>
             <input type="text" className="form-control" id="name" placeholder="Tu nombre completo" />
