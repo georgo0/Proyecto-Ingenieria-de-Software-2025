@@ -1,7 +1,7 @@
 import React from 'react';
 
 function SelectCourse() {
-  const grades = ['1° Básico', '2° Básico', '3° Básico', '4° Básico', '5° Básico', '6° Básico'];
+  const grades = ['1° Básico', '2° Básico', '3° Básico', '4° Básico', '5° Básico', '6° Básico']; //Modificar a gusto :)
 
   // const handleSelect = (grade) => {
   //   console.log(`Curso seleccionado: ${grade}`);
