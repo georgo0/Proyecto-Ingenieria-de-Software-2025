@@ -10,6 +10,8 @@ import RegisterTeacher from './components/teacher/RegisterTeacher';
 import Dashboard from './components/Dashboard';
 import MainStudent from './components/student/MainStudent';
 import IngresarCodigo from './components/student/IngresarCodigo';
+import Curso from './components/student/Curso'; // Ajusta la ruta si es necesario
+import Actividades from './components/student/Actividades';
 
 
 function App() {
@@ -25,7 +27,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/main-student" element={<MainStudent />} />
           <Route path="/ingresar-codigo" element={<IngresarCodigo />} />
-
+          <Route path="/curso" element={<Curso />} />
+          <Route path="/actividades" element={<Actividades/>} />
         </Routes>
       </Container>
     </>

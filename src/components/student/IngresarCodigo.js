@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function IngresarCodigo() {
   const [codigo, setCodigo] = useState('');
+  const navigate = useNavigate();
+
+  const cursos = {
+    '4B-2024': 'Cuarto Básico B',
+    '5A-2024': 'Quinto Básico A',
+    // Puedes agregar más aquí
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí va la lógica cuando se envía el código
-    console.log('Código ingresado:', codigo);
-    // Por ejemplo, después puedes validar o redirigir
+
+    if (cursos[codigo]) {
+      localStorage.setItem('codigoCurso', codigo);
+      localStorage.setItem('nombreCurso', cursos[codigo]);
+      navigate('/curso');
+    } else {
+      alert('Código no válido. Intenta nuevamente.');
+    }
   };
 
   return (
@@ -21,7 +34,7 @@ function IngresarCodigo() {
             type="text"
             id="codigo"
             className="form-control"
-            placeholder="Ingresa el código"
+            placeholder="Ej: 4B-2024"
             value={codigo}
             onChange={(e) => setCodigo(e.target.value)}
             required
