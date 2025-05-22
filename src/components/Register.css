@@ -1,10 +1,9 @@
 /*Archivo para modificar componente visual de Registro*/
 
+
+/*Archivo para modificar componente visual de Registro*/
+
 .fondo-register {
-  background-color: #eaf4f4;
+  background-color: #d0ff00;
 }
 
-.sombra-register {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}

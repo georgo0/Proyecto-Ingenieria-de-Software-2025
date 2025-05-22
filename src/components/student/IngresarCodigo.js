@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import BackgroundLayout from '../BackgroundLayout';
 function IngresarCodigo() {
   const [codigo, setCodigo] = useState('');
   const navigate = useNavigate();
 
+//PARA METERSE A CURSO HAY QUE INGRESAR UNO DE ESTOS CODIGOS 4B-2024 O 5A-2024
+
   const cursos = {
     '4B-2024': 'Cuarto Básico B',
     '5A-2024': 'Quinto Básico A',
-    // Puedes agregar más aquí
   };
 
   const handleSubmit = (e) => {
@@ -24,6 +25,8 @@ function IngresarCodigo() {
   };
 
   return (
+        <BackgroundLayout>
+
     <div className="container mt-5" style={{ maxWidth: '400px' }}>
       <h2 className="mb-4 text-center">Ingresar código para acceder a un curso</h2>
 
@@ -44,6 +47,7 @@ function IngresarCodigo() {
         <button type="submit" className="btn btn-primary w-100">Enviar</button>
       </form>
     </div>
+  </BackgroundLayout>
   );
 }
 

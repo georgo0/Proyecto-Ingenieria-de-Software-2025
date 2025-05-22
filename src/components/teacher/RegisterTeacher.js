@@ -59,11 +59,11 @@ export default RegisterTeacher;
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Register.css'; // Asegúrate de que el archivo existe y contiene las clases fondo-register y sombra-register
+import '../Register.css';
 
 function RegisterTeacher() {
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100 fondo-register">
+    <div className="container d-flex justify-content-center align-items-center vh-100">
       <div className="card p-4 sombra-register" style={{ width: '100%', maxWidth: '400px' }}>
         <h2 className="text-center mb-4">Registro de Profesor</h2>
         <form>

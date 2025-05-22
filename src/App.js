@@ -10,15 +10,15 @@ import RegisterTeacher from './components/teacher/RegisterTeacher';
 import Dashboard from './components/Dashboard';
 import MainStudent from './components/student/MainStudent';
 import IngresarCodigo from './components/student/IngresarCodigo';
-import Curso from './components/student/Curso'; // Ajusta la ruta si es necesario
-import Actividades from './components/student/Actividades';
-
+import Curso from './components/student/Curso'; 
+import Unidades from './components/student/Unidades';
+import Minijuegos from './components/student/Minijuegos';
+import Estadísticas from './components/student/Estadisticas';
 
 function App() {
   return (
     <>
       <NavigationBar />
-      <Container className="mt-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -28,9 +28,10 @@ function App() {
           <Route path="/main-student" element={<MainStudent />} />
           <Route path="/ingresar-codigo" element={<IngresarCodigo />} />
           <Route path="/curso" element={<Curso />} />
-          <Route path="/actividades" element={<Actividades/>} />
+          <Route path="/unidades" element={<Unidades />} />
+          <Route path="/minijuegos/:unidadId" element={<Minijuegos />} />
+          <Route path="/estadisticas" element={<Estadísticas />} />
         </Routes>
-      </Container>
     </>
   );
 }
