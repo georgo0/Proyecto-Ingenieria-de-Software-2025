@@ -12,7 +12,7 @@ import MainStudent from './components/student/MainStudent';
 import IngresarCodigo from './components/student/IngresarCodigo';
 import MainTeacher from './components/teacher/MainTeacher';
 import SelectCourse from './components/teacher/SelectCourse';
-
+import CreateCourse from './components/teacher/CreateCourse';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           <Route path="/ingresar-codigo" element={<IngresarCodigo />} />
           <Route path="/main-teacher" element={<MainTeacher />} />
           <Route path="/ver-cursos" element={<SelectCourse />} />
+          <Route path="/crear-curso" element={<CreateCourse />} />        
         </Routes>
       </Container>
     </>
