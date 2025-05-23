@@ -1,4 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; //Importa los estilos de Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; //  esto activa dropdowns, tooltips, etc. para Bootstrap
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
