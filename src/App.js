@@ -10,6 +10,11 @@ import RegisterTeacher from './components/teacher/RegisterTeacher';
 import Dashboard from './components/Dashboard';
 import MainStudent from './components/student/MainStudent';
 import IngresarCodigo from './components/student/IngresarCodigo';
+import Curso from './components/student/Curso'; 
+import Unidades from './components/student/Unidades';
+import Minijuegos from './components/student/Minijuegos';
+import Estadísticas from './components/student/Estadisticas';
+
 import MainTeacher from './components/teacher/MainTeacher';
 import SelectCourse from './components/teacher/SelectCourse';
 import CreateCourse from './components/teacher/CreateCourse';
@@ -27,6 +32,10 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/main-student" element={<MainStudent />} />
           <Route path="/ingresar-codigo" element={<IngresarCodigo />} />
+          <Route path="/curso" element={<Curso />} />
+          <Route path="/unidades" element={<Unidades />} />
+          <Route path="/minijuegos/:unidadId" element={<Minijuegos />} />
+          <Route path="/estadisticas" element={<Estadísticas />} />          
           <Route path="/main-teacher" element={<MainTeacher />} />
           <Route path="/ver-cursos" element={<SelectCourse />} />
           <Route path="/crear-curso" element={<CreateCourse />} />        
